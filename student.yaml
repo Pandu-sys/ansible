@@ -1,0 +1,27 @@
+- name: "Rani Pandu"
+  dob: "1996-01-01"
+  mobile: "1234567890"
+  addresses:
+  - type: perm
+    street: "Balaji layout"
+    apartments: "RSR residency"
+    city: "HYD"
+
+  - type: current
+    street: "Balaji layout"
+    apartments: "RSR residency"
+    city: "HYD"
+
+- name: "Rani Pandu"
+  dob: "1996-01-01"
+  mobile: "1234567890"
+  addresses:
+  - type: perm
+    street: "Balaji layout"
+    apartments: "RSR residency"
+    city: "HYD"
+
+  - type: current
+    street: "Balaji layout"
+    apartments: "RSR residency"
+    city: "HYD"
