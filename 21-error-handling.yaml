@@ -1,4 +1,4 @@
-- name: demo error handling 
+- name: demo on error handling 
   hosts: local
   connections: local 
   tasks: 
