@@ -13,4 +13,4 @@
     vars: 
       full_name: "Rani from TASK level"
     debug: 
-      msg: "Hi, {{ full_name }}"
+      msg: "Hi, {{ full_name }}" 
