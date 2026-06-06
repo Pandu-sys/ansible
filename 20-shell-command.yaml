@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: command test
-    #command: cat /etc/password | grep root 
-    shell: cat /etc/password | grep root 
+    #command: cat /etc/passwd | grep root 
+    shell: cat /etc/passwd | grep root 
