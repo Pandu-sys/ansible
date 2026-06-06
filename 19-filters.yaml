@@ -11,6 +11,7 @@
       environment: dev
 
     full_name: Rani Pandu
+    ip_address: 1000.790.489.7979
 
     tagslist:
       - key: name
@@ -44,3 +45,10 @@
     - name: convert to lowercase
       debug:
         msg: "{{ full_name | lower }}"
+    
+    - name: check ipv4 address
+      debug:
+        msg: "{{ ip_address | ansible.utils.ipv4 }}"
+    
+     
+     
