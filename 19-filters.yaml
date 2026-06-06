@@ -1,45 +1,42 @@
-- name: demo on filters 
-  hosts: local
+- name: demo on filters
+  hosts: localhost
   connection: local
-  vars: 
-    topics: Linux, Shell, Ansible, Terraform 
+
+  vars:
+    topics: Linux, Shell, Ansible, Terraform
+
     tagMap:
-       name: Ansible
-       project: roboshop
-       environment: dev 
-    name: Rani Pandu
-    tagslist: [
-                {
-            "key": "name",
-            "value": "Ansible"
-        },
-        {
-            "key": "project",
-            "value": "roboshop"
-        },
-        {
-            "key": "environment",
-            "value": "dev"
-        }
-    ]
+      name: Ansible
+      project: roboshop
+      environment: dev
 
-  tasks: 
-  - name: convert string to list
-    debug: 
-      msg: "Topics are: {{ topics | split(',') }}"
-  
-  - name: set default value
-    debug: 
-      msg: "Hi {{ GREETING | default('Good Morning') }}"
-  
-  - name: convert map to list
-    debug:
-      msg: "{{ tagMap | dict2items }}"
+    full_name: Rani Pandu
 
-  - name: convert list to map
-    debug:
-      msg: "{{ tagslist | items2dict }}"
+    tagslist:
+      - key: name
+        value: Ansible
+      - key: project
+        value: roboshop
+      - key: environment
+        value: dev
 
-  - name: convert to uppercase
-    debug:
-      msg: "{{ full_name | upper }}"
+  tasks:
+    - name: convert string to list
+      debug:
+        msg: "Topics are: {{ topics | split(',') }}"
+
+    - name: set default value
+      debug:
+        msg: "Hi {{ GREETING | default('Good Morning') }}"
+
+    - name: convert map to list
+      debug:
+        msg: "{{ tagMap | dict2items }}"
+
+    - name: convert list to map
+      debug:
+        msg: "{{ tagslist | items2dict }}"
+
+    - name: convert to uppercase
+      debug:
+        msg: "{{ full_name | upper }}"
